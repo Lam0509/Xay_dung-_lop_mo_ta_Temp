@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(celcius) {
+        this.celcius = celcius;
+        this.F = function () {
+            return 9/5 * this.celcius + 32;
+        }
+        this.Kenvin = function () {
+            return this.celcius + 273.15
+        }
+    }
+    let temp = new Temperature(25);
+    alert(temp.F());
+    alert(temp.Kenvin());
+</script>
+</body>
+</html>
